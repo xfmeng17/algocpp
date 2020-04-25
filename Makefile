@@ -1,14 +1,16 @@
-sort : sort.o mergesort.o quicksort.o
-	cc -o sort sort.o quicksort.o mergesort.o
+sort_objects = sort.o mergesort.o quicksort.o
 
-sort.o : sort.c
-	cc -c sort.c
+sort : $(sort_objects)
+	gcc -o sort $(sort_objects) -I./include
 
-mergesort.o : mergesort/mergesort.c
-	cc -c mergesort/mergesort.c 
+sort.o : src/sort/sort.c
+	gcc -c src/sort/sort.c -I./include
 
-quicksort.o : quicksort/quicksort.c
-	cc -c quicksort/quicksort.c
+mergesort.o : src/sort/mergesort.c
+	gcc -c src/sort/mergesort.c -I./include 
+
+quicksort.o : src/sort/quicksort.c
+	gcc -c src/sort/quicksort.c -I./include
 
 .PHONY : clean
 clean : 

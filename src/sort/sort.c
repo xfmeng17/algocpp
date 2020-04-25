@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-#include "mergesort/mergesort.h"
-#include "quicksort/quicksort.h"
+#include "mergesort.h"
+#include "quicksort.h"
 
 int main() {
   int arr[] = {6, 10, 13, 5, 8, 3, 2, 11};
