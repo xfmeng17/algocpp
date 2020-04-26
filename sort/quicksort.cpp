@@ -1,4 +1,7 @@
+#include <vector>
 #include "quicksort.h"
+
+using namespace std;
 
 void swap(int* a, int* b) {
 	int t = *a;
@@ -7,7 +10,8 @@ void swap(int* a, int* b) {
 	return;
 }
 
-int quicksort(int* arr, int p, int q) {
+
+int quicksort(vector<int>& arr, int p, int q) {
   if (p >= q) {
     return 0;
   }
