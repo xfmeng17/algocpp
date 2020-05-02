@@ -2,10 +2,10 @@ run_objects = run.o mergesort.o quicksort.o insertsort.o \
 			  findkth.o
 
 run : $(run_objects)
-	g++ -o run $(run_objects) -I./include -I../
+	g++ --std=c++11 -o run $(run_objects) -I./include -I../
 
 run.o : run.cpp
-	g++ -c run.cpp -I./include -I../
+	g++ --std=c++11 -c run.cpp -I./include -I../
 
 mergesort.o : mergesort.cpp
 	g++ -c mergesort.cpp -I./include -I../
