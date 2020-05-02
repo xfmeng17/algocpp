@@ -16,7 +16,7 @@ int quicksort(vector<int>& arr, int p, int q) {
   int i = p;
   int j = i + 1;
   for (; j <= q; j++) {
-    if (arr[j] <= arr[i]) {
+    if (arr[j] <= arr[p]) {
       i++;
 	  swap(&arr[i], &arr[j]);
     }
