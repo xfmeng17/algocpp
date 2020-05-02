@@ -1,7 +1,5 @@
-#include <vector>
+#include "common.h"
 #include "quicksort.h"
-
-using namespace std;
 
 void swap(int* a, int* b) {
 	int t = *a;

@@ -1,8 +1,7 @@
 #ifndef _QUICKSORT_H_
 #define _QUICKSORT_H_
 
-#include <vector>
-using namespace std;
+#include "common.h"
 
 int quicksort(vector<int>& arr, int p, int q);
 

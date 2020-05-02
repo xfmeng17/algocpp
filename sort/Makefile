@@ -1,16 +1,19 @@
-sort_objects = sort.o mergesort.o quicksort.o
+sort_objects = sort.o mergesort.o quicksort.o insertsort.o
 
 sort : $(sort_objects)
-	g++ -o sort $(sort_objects) -I./include
+	g++ -o sort $(sort_objects) -I./include -I../
 
 sort.o : sort.cpp
-	g++ -c sort.cpp -I./include
+	g++ -c sort.cpp -I./include -I../
 
 mergesort.o : mergesort.cpp
-	g++ -c mergesort.cpp -I./include 
+	g++ -c mergesort.cpp -I./include -I../
 
 quicksort.o : quicksort.cpp
-	g++ -c quicksort.cpp -I./include
+	g++ -c quicksort.cpp -I./include -I../
+
+insertsort.o : insertsort.cpp
+	g++ -c insertsort.cpp -I./include -I../
 
 .PHONY : clean
 clean : 
