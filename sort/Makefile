@@ -1,11 +1,11 @@
-run_objects = run.o mergesort.o quicksort.o insertsort.o \
+sort_objects = sort.o mergesort.o quicksort.o insertsort.o \
 			  findkth.o
 
-run : $(run_objects)
-	g++ --std=c++11 -o run $(run_objects) -I./include -I../
+sort : $(sort_objects)
+	g++ --std=c++11 -o sort $(sort_objects) -I./include -I../
 
-run.o : run.cpp
-	g++ --std=c++11 -c run.cpp -I./include -I../
+sort.o : sort.cpp
+	g++ --std=c++11 -c sort.cpp -I./include -I../
 
 mergesort.o : mergesort.cpp
 	g++ -c mergesort.cpp -I./include -I../
@@ -21,4 +21,4 @@ findkth.o : findkth.cpp
 
 .PHONY : clean
 clean : 
-	-rm run *.o
+	-rm sort *.o
