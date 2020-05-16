@@ -1,4 +1,4 @@
-#include "common.h"
+#include "sort.h"
 
 int partition(vector<int>& arr, int p, int q) {
 	if (p > q) {

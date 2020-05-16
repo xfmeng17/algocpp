@@ -1,7 +1,4 @@
-#include <stdlib.h>
-
-#include "common.h"
-#include "mergesort.h"
+#include "sort.h"
 
 static int msort(int *arr, int *aux, int lo, int hi);
 static int merge(int *arr, int *aux, int lo, int hi);

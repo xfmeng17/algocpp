@@ -1,8 +1,4 @@
-#include "common.h"
-#include "mergesort.h"
-#include "quicksort.h"
-#include "insertsort.h"
-#include "findkth.h"
+#include "sort.h"
 
 int main() {
   vector<int> arr = {6, 10, 13, 5, 8, 3, 2, 11};

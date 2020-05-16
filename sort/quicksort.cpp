@@ -1,5 +1,4 @@
-#include "common.h"
-#include "quicksort.h"
+#include "sort.h"
 
 void swap(int* a, int* b) {
 	int t = *a;

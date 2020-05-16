@@ -1,5 +1,4 @@
-#include "common.h"
-#include "insertsort.h"
+#include "sort.h"
 
 int insertsort(vector<int>& arr) {
 	for (int i = 0; i < arr.size(); i++) {
