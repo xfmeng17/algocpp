@@ -1,13 +1,19 @@
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 
-cc_binary(
+cc_library(
     name = "sort",                                                           
     srcs = [
-        "sort.cc",
         "quicksort.cc",
         "mergesort.cc",
         "insertsort.cc",
         "findkth.cc"
     ],
-    hdrs = ["sort.h", "../common.h"],
+    hdrs = ["sort.h"],
+    deps = ["//common:common"],
+)
+
+cc_binary(
+    name = "test",
+    srcs = ["test.cc"],
+    deps = ["//sort:sort"],
 )
