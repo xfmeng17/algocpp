@@ -11,7 +11,7 @@ int main() {
   printf("\n");
 
   int k = 5;
-  ret = findkth(arr, 0, 8-1, k);
+  ret = findkth(arr, 0, 8 - 1, k);
   cout << "findkth ret=" << ret << endl;
 
   return 0;

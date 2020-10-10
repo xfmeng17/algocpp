@@ -1,11 +1,11 @@
-test_objects = test.o mergesort.o quicksort.o insertsort.o \
+main_objects = main.o mergesort.o quicksort.o insertsort.o \
 			  findkth.o
 
-test : $(test_objects)
-	g++ --std=c++11 -o test $(test_objects) -I../
+main : $(main_objects)
+	g++ --std=c++11 -o main $(main_objects) -I../
 
-test.o : test.cc
-	g++ --std=c++11 -c test.cc -I../
+main.o : main.cc
+	g++ --std=c++11 -c main.cc -I../
 
 mergesort.o : mergesort.cc
 	g++ -c mergesort.cc -I../
@@ -21,4 +21,4 @@ findkth.o : findkth.cc
 
 .PHONY : clean
 clean : 
-	-rm test *.o
+	-rm main *.o

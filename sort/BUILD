@@ -13,7 +13,7 @@ cc_library(
 )
 
 cc_binary(
-    name = "test",
-    srcs = ["test.cc"],
+    name = "main",
+    srcs = ["main.cc"],
     deps = ["//sort:sort"],
 )
